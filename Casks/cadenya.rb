@@ -3,24 +3,23 @@ cask "cadenya" do
   version "1.0.2"
 
   on_macos do
-    on_intel do
-      sha256 "44e9f7354b9a1e8b97f1c9ac3d7575c50d7d204c08edd325189bcabe0414ddd6"
-      url "https://github.com/cadenya/cadenya-cli/releases/download/v#{version}/cadenya_#{version}_darwin_amd64.tar.gz"
-    end
     on_arm do
-      sha256 "7ca2475e1699263473332122bd0a7cc0abe26749dc28ae48d21575ef032d4a88"
+      sha256 "8fdd5cd3a72bb81e822d571914989653d411efdd8f09e3c4747f465cd51c5f75"
       url "https://github.com/cadenya/cadenya-cli/releases/download/v#{version}/cadenya_#{version}_darwin_arm64.tar.gz"
     end
-  end
-
-  on_linux do
     on_intel do
-      sha256 "76536c827e3cae914ce114c443b1b546dfcafdfa3f7a0dc2c9497a4b2e92fd2e"
-      url "https://github.com/cadenya/cadenya-cli/releases/download/v#{version}/cadenya_#{version}_linux_amd64.tar.gz"
+      sha256 "1451e7c4b75b7beb4222993ab9070b20bb24d590226dd06169b566a47453b074"
+      url "https://github.com/cadenya/cadenya-cli/releases/download/v#{version}/cadenya_#{version}_darwin_amd64.tar.gz"
     end
+  end
+  on_linux do
     on_arm do
-      sha256 "8465cc0fdfd50d9f95b0c7afc39dae70c546938aa45877089ace369a3a4c3dae"
+      sha256 "fd244218c8ba76f947cb4f048d4b02fa219cc0a8d874d75e92f020f89ca68885"
       url "https://github.com/cadenya/cadenya-cli/releases/download/v#{version}/cadenya_#{version}_linux_arm64.tar.gz"
+    end
+    on_intel do
+      sha256 "16d53342a739bd83ed0a6dc3c88f24a9f1de91fa44b0ae534d03f6a06f6364e0"
+      url "https://github.com/cadenya/cadenya-cli/releases/download/v#{version}/cadenya_#{version}_linux_amd64.tar.gz"
     end
   end
 
@@ -41,5 +40,4 @@ cask "cadenya" do
   end
 
   # No zap stanza required
-
 end
